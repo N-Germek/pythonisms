@@ -89,20 +89,20 @@ def test_str():
 
 @pytest.mark.skip("pending")
 def test_equals():
-    lla = LinkedList(['Vader', 'Sideous', 'Revan'])
-    llb = LinkedList(['Vader', 'Sideous', 'Revan'])
+    lla = LinkedList(['Svemir', 'Kenda', 'Bean'])
+    llb = LinkedList(['Svemir', 'Kenda', 'Bean'])
     assert lla == llb
 
 
 @pytest.mark.skip("pending")
 def test_get_item():
-    foods = LinkedList(['Vader', 'Sideous', 'Revan'])
-    assert foods[0] == 'Vader'
+    animals = LinkedList(['Svemir', 'Kenda', 'Bean'])
+    assert animals[0] == 'Pico'
 
 
 @pytest.mark.skip("pending")
 def test_get_item_out_of_range():
-    foods = LinkedList(['Vader', 'Sideous', 'Revan'])
+    animals = LinkedList(['Svemir', 'Kenda', 'Bean'])
     with pytest.raises(IndexError):
-        foods[100]
+        animals[100]
 
